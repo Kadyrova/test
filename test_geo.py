@@ -16,8 +16,8 @@ class TestGeo(unittest.TestCase):
 				data.append(x)
 		i = 0
 		while i < len(data):
-				geolocator = Nominatim(user_agent="c0mkom@yandex.ru")
-				location = geolocator.geocode(data[i])
+				geolocator = Nominatim(user_agent="c0mk0m@yandex.ru")
+				location = geolocator.geocode(str(data[i]))
 				latitude = str(location.latitude)
 				longitude = str(location.longitude)
 				coordinate = latitude + ", " + longitude
@@ -38,7 +38,7 @@ class TestGeo(unittest.TestCase):
 				data.append(x)
 		i = 0
 		while i < len(data):
-			geolocator = Nominatim(user_agent="c0mkom@yandex.ru")
+			geolocator = Nominatim(user_agent="c0mk0m@yandex.ru")
 			location = geolocator.reverse(str(data[i+1]))
 			address = str(location.address) 
 			try:
