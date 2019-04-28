@@ -7,7 +7,7 @@ from geopy.geocoders import Nominatim
 class TestGeo(unittest.TestCase):
 	def test1(self):
 		data =[]
-		test_file=("/home/u1/test/Book.xlsx")
+		test_file=("./Book.xlsx")
 		workbook=xlrd.open_workbook(test_file)
 		sheet=workbook.sheet_by_index(0)
 		for rownum in range(sheet.nrows):
@@ -29,7 +29,7 @@ class TestGeo(unittest.TestCase):
 				i+=2
 	def test2(self):
 		data =[]
-		test_file=("/home/u1/test/book1.xlsx")
+		test_file=("./book1.xlsx")
 		workbook=xlrd.open_workbook(test_file)
 		sheet=workbook.sheet_by_index(0)
 		for rownum in range(sheet.nrows):
