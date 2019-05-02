@@ -15,6 +15,6 @@ cd test
 
 pip3 install -r requirements.txt
 
-python3 test_geo.py
+python3 -m unittest -v test_geo.py 
 
 ```
